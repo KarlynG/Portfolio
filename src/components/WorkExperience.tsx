@@ -21,12 +21,12 @@ import { config } from '../config';
 
 interface TimelineItemContentProps {
   job: typeof config.workExperience[0];
-  index: number;
+  // index: number; // Removed as it's unused in the component
   setActiveIndex: (index: number) => void;
 }
 
 
-const TimelineItemContent: React.FC<Omit<TimelineItemContentProps, 'setActiveIndex'>> = ({ job, index }) => {
+const TimelineItemContent: React.FC<Omit<TimelineItemContentProps, 'setActiveIndex'>> = ({ job }) => {
   
   
   
@@ -166,7 +166,7 @@ const WorkExperience: React.FC = () => {
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                       >
                         
-                        <TimelineItemContent job={job} index={index} />
+                        <TimelineItemContent job={job} />
                       </motion.div>
                     </TimelineContent>
                   </TimelineItem>
