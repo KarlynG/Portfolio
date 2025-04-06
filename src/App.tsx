@@ -19,7 +19,17 @@ function App() {
         py: 6, 
         bgcolor: 'background.default' 
       }}>
-        <img src={ChillDudeSvg} alt="Decorative illustration" style={{ maxWidth: '50%', height: 'auto', marginBottom: '-7rem', marginTop: '-13rem' }} /> 
+        <Box 
+          component="img" 
+          src={ChillDudeSvg} 
+          alt="Decorative illustration" 
+          sx={{ 
+            maxWidth: { xs: '80%', sm: '50%' }, // Responsive max width
+            height: 'auto', 
+            marginBottom: { xs: '-5rem', sm: '-7rem' }, // Responsive bottom margin
+            marginTop: { xs: '-8rem', sm: '-13rem' } // Responsive top margin
+          }} 
+        /> 
       </Box>
       <AboutMe />
       <Projects /> 
