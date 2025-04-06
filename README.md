@@ -2,7 +2,7 @@
 
 This is the source code for my personal portfolio website, showcasing my skills, work experience, and projects.
 
-**Live Site:** [Site Link] <!-- Replace with your Netlify/Vercel/etc. link -->
+[Demo](https://karlyn-portfolio.netlify.app/)
 
 ## Features
 
